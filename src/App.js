@@ -1,14 +1,23 @@
 import './styles/App.scss';
-import { BrowserRouter as Router} from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Profil from './components/Profil';
-import Card from './components/Card';
+import Day from './components/Day';
+import Week from './components/Week';
+import Month from './components/Month';
 
 function App() {
   return (
     <Router>
-      <div className="app">
+      <div className='app'>
         <Profil/>
-        <Card/>
+        <div className='cardContainer'>
+          <Routes>
+            <Route path='*' element={<Day/>}/>
+            <Route path='/day' element={<Day/>}/>
+            <Route path='/week' element={<Week/>}/>
+            <Route path='/month' element={<Month/>}/>
+          </Routes>
+        </div>
       </div>
     </Router>
   );

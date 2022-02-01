@@ -1,0 +1,66 @@
+.cardBox {
+  border-radius: 24px;
+  flex-basis: 30%;
+  height: 48%;
+  display: flex;
+  overflow-y: hidden;
+  background-color: #f1c65b;
+  border: 0px;
+  align-items: flex-end;
+  flex-grow: 1;
+  margin-left: 30px;
+  position: relative;
+
+  .cardBoxImg {
+    z-index: 1;
+    position: absolute;
+    top: -2%;
+    left: 75%;
+    width: 60px;
+    height: 60px;
+  }
+
+  .cardMainBox {
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    background-color: hsl(235, 46%, 20%);
+    flex-grow: 1;
+    height: 80%;
+    border-radius: 20px;
+    color: white;
+    text-align: left;
+    padding: 0 30px;
+
+    .cardHeader {
+      display: flex;
+      justify-content: space-between;
+      flex-basis: 100%;
+
+      h4 {
+        width: 70%;
+        margin: 0;
+      }
+
+      img {
+        margin: auto 0;
+        width: 20px;
+        height: 5px;
+      }
+    }
+
+    h1 {
+      letter-spacing: 1px;
+      font-size: 44px;
+      width: 100%;
+      margin: 0;
+    }
+
+    p {
+      width: 100%;
+      margin: 0;
+      color: #5257af;
+    }
+  }
+}
