@@ -9,8 +9,10 @@ const Profil = () => (
       <div className="imgContainer">
         <img src={profilImg} alt="face"></img>
       </div>
-      <p>Report for</p>
-      <h1>Jeremy Robson</h1>
+      <div className='textContainer'>
+        <p>Report for</p>
+        <h1>Jeremy Robson</h1>
+      </div>
     </div>
     <div className="sideBox">
       <NavLink to='/day' className={({ isActive }) => (isActive ? 'active' : '')}>Daily</NavLink>
