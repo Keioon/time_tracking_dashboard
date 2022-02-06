@@ -1,6 +1,6 @@
 {
-  "name": "time_tracking_dashboard",
   "homepage": "https://keioon.github.io/time_tracking_dashboard/",
+  "name": "time_tracking_dashboard",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
