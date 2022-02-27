@@ -3,7 +3,7 @@ import '../styles/Profil.scss';
 import { NavLink } from 'react-router-dom';
 import profilImg from '../images/image-jeremy.png';
 
-const Profil = () => (
+const Profil = ({routeName}) => (
   <div className="profilBox">
     <div className="mainBox">
       <div className="imgContainer">
@@ -15,9 +15,9 @@ const Profil = () => (
       </div>
     </div>
     <div className="sideBox">
-      <NavLink to='/day' className={({ isActive }) => (isActive ? 'active' : '')}>Daily</NavLink>
-      <NavLink to='/week' className={({ isActive }) => (isActive ? 'active' : '')}>Week</NavLink>
-      <NavLink to='/month' className={({ isActive }) => (isActive ? 'active' : '')}>Month</NavLink>
+      <NavLink to={`${routeName}/day`} className={({ isActive }) => (isActive ? 'active' : '')}>Daily</NavLink>
+      <NavLink to={`${routeName}/week`} className={({ isActive }) => (isActive ? 'active' : '')}>Week</NavLink>
+      <NavLink to={`${routeName}/month`} className={({ isActive }) => (isActive ? 'active' : '')}>Month</NavLink>
     </div>
   </div>
 );
